@@ -8,10 +8,12 @@
   <license>NON-COMMERCIAL LICENSE AGREEMENT</license>
 
   <author email="s.aoki@rt-net.jp">ShotaAk</author>
+  <author email="mizoguchi@rt-net.jp">Nozomi Mizoguchi</author>
+  <author email="kuwagata@rt-net.jp">Atsushi Kuwagata</author>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <depend>ign_ros2_control</depend>
+  <depend>gz_ros2_control</depend>
   <depend>joint_state_publisher_gui</depend>
   <depend>launch</depend>
   <depend>robot_state_publisher</depend>
