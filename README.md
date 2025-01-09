@@ -6,15 +6,16 @@
 
 [CRANE-X7](https://rt-net.jp/products/crane-x7/)のURDFファイルを含むROS 2パッケージです。
 
-## サポートするROSディストリビューション
+## サポートするROS 2ディストリビューション
 
 - [Foxy](https://github.com/rt-net/crane_x7_description/tree/foxy-devel)
-- Humble
+- [Humble](https://github.com/rt-net/crane_x7_description/tree/humble)
+- [Jazzy](https://github.com/rt-net/crane_x7_description/tree/jazzy)
 
 ### ROS 1
 
-- [Melodic](https://github.com/rt-net/crane_x7_description/tree/master)
-- [Noetic](https://github.com/rt-net/crane_x7_description/tree/master)
+- [Melodic](https://github.com/rt-net/crane_x7_description/tree/v1.0.0)
+- [Noetic](https://github.com/rt-net/crane_x7_description/tree/v1.0.0)
 
 ## インストール方法
 
@@ -22,7 +23,7 @@
 # 本パッケージをクローンし、依存関係をインストールする
 mkdir -p ~/ros2_ws/src
 cd ~/ros2_ws/src
-git clone -b ros2 https://github.com/rt-net/crane_x7_description
+git clone -b $ROS_DISTRO https://github.com/rt-net/crane_x7_description.git
 rosdep install -r -y -i --from-paths .
 
 # パッケージをビルドする
