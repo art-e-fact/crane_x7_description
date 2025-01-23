@@ -6,10 +6,11 @@
 
 ROS 2 package with URDF description macro for [CRANE-X7](https://rt-net.jp/products/crane-x7/).
 
-## Supported ROS distributions
+## Supported ROS 2 distributions
 
 - [Foxy](https://github.com/rt-net/crane_x7_description/tree/foxy-devel)
-- Humble
+- [Humble](https://github.com/rt-net/crane_x7_description/tree/humble)
+- [Jazzy](https://github.com/rt-net/crane_x7_description/tree/jazzy)
 
 ### ROS 1
 
@@ -22,7 +23,7 @@ ROS 2 package with URDF description macro for [CRANE-X7](https://rt-net.jp/produ
 # Clone crane_x7_description and install dependencies
 mkdir -p ~/ros2_ws/src
 cd ~/ros2_ws/src
-git clone -b ros2 https://github.com/rt-net/crane_x7_description
+git clone -b $ROS_DISTRO https://github.com/rt-net/crane_x7_description.git
 rosdep install -r -y -i --from-paths .
 
 # Build the package
